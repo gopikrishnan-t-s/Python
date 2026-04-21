@@ -9,12 +9,10 @@ for i in range(10):
 # check to see if number is even and if yes, add to list_sum
 # print incorrect value warning  when ValueError exception occurs
     try:
-        number = userInput
-        user_list.append(number)
-        if number % 2 == 0:
-            list_sum += number
+        user_list.append(userInput)
+        if userInput % 2 == 0:
+            list_sum += userInput
     except ValueError:
         print("Incorrect value. That's not an int!")
-
 print("user_list: {}".format(user_list))
 print("The sum of the even numbers in user_list is: {}.".format(list_sum))
