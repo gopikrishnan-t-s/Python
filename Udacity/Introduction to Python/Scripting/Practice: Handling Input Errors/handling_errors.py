@@ -1,12 +1,15 @@
 def party_planner(cookies, people):
     leftovers = None
     num_each = None
-    # TODO: Add a try-except block here to
-    #       make sure no ZeroDivisionError occurs.
-    num_each = cookies // people
-    leftovers = cookies % people
 
-    return(num_each, leftovers)
+    try:
+        num_each = cookies // people
+        leftovers = cookies % people
+    except ZeroDivisionError:
+        print("Oops, you entered 0 people will be attending.")
+        print("Please enter a good number of people for a party.")
+    
+    return(num_each, leftovers)```
 
 # The main code block is below; do not edit this
 lets_party = 'y'
