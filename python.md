@@ -1,1 +1,1 @@
-Study Python.. bro
+Study Python
